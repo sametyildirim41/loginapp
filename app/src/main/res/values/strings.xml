@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">LoginApp</string>
+    <string name="nav_header_title" translatable="false"> </string>
+    <string name="nav_header_subtitle" translatable="false"> </string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="profileInfo">Profile Info</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="passwordAgain">Password (Again)</string>
+    <string name="register">Register</string>
+    <string name="signIn">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalidUsername">Not a valid email (username)</string>
+    <string name="invalidPassword">Password must be >5 characters</string>
+    <string name="loginFailed">"Login failed"</string>
+    <string name="rememberMe">"Remember Me"</string>
+    <string name="version">"Version"</string>
+    <string name="pleaseEnterUsername">Please enter username</string>
+    <string name="pleaseEnterPassword">Please enter password</string>
+    <string name="connectionError">Connection Error</string>
+    <string name="userNotFound">User Not Found</string>
+    <string name="passwordsDoNotMatch">Passwords Do Not Match</string>
+    <string name="usernameOrPasswordIsIncorrect">Username or password is incorrect</string>
+    <string name="usernameAlreadyTaken">Username already taken</string>
+    <string name="logout">Logout</string>
+    <string name="editProfile">Edit Profile</string>
+    <string name="main">Main Page</string>
+    <string name="doYouWantToLogoutFromThisApplication">Do You Want To Logout From This Application?</string>
+    <string name="doYouWantToDeleteThisUser">Do You Want To Delete This User? (%s)</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
+    <string name="update">Update</string>
+    <string name="deleteUser">Delete User</string>
+
+</resources>

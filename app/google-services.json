@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "707964239095",
+    "firebase_url": "https://loginapp41.firebaseio.com",
+    "project_id": "loginapp41",
+    "storage_bucket": "loginapp41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707964239095:android:588878ee752d7626c327f2",
+        "android_client_info": {
+          "package_name": "com.sametyildirim.loginapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "707964239095-efp0sf3nhndtt0emdd88rivcu49qh5h5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC24R-kPJLmOR05KyVfUo6KlNtAARBoTg8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "707964239095-efp0sf3nhndtt0emdd88rivcu49qh5h5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

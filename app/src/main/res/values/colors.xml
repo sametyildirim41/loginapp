@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary2">#006F62</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorAccent2">#BB1853</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="materialBlueGrey50">#ffeceff1</color>
+    <color name="materialBlueGrey70">#feeceff1</color>
+    <color name="materialBlueGrey100">#ffcfd8dc</color>
+    <color name="textGrey">#4c4c4e</color>
+
+<!--    Renkler ve tasarım üzerine zaman harcamadım. Proje oluşturma esnasında default gelen Primary ve Accent renkleri üzerinden projeyi ilerlettim. -->
+
+</resources>

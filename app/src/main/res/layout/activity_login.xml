@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtVersion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text=""
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/loginLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="100dp"
+                android:id="@+id/imgProfilePhoto"
+                android:src="@drawable/defaultprofilephoto"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal" />
+
+            <!--  Email Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="30dp"
+                android:id="@+id/txtUserNameLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                app:hintTextAppearance="@style/TextLabel"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                android:hint="@string/email"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtUserName"
+                    android:padding="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:maxLength="60"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--  Password Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPasswordLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorAccent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="@string/password"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="14sp"
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:layout_width="250dp"
+    android:layout_height="50dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnLogin"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginRight="2dp"
+        style="@style/ButtonFlat"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/signIn"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnRegister"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        style="@style/ButtonFlatAccent"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/register"/>
+
+</LinearLayout>
+
+            <Switch
+                android:layout_marginTop="-15dp"
+                android:padding="14sp"
+                android:id="@+id/switchRememberMe"
+                android:text="@string/rememberMe"
+                android:textColor="@color/colorAccent"
+                android:alpha="0.7"
+                android:textStyle="italic"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

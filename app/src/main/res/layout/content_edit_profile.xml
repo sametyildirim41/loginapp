@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        >
+
+        <ProgressBar
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/editProfileLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:gravity="center"
+            android:focusableInTouchMode="true"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/imgProfilePhoto"
+                android:src="@drawable/defaultprofilephoto"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center_horizontal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtUserName"
+                android:padding="14sp"
+                android:layout_marginTop="30dp"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                android:layout_marginBottom="8dp"
+                android:text="ALİ VELİ 49 50"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtNameLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                app:hintTextAppearance="@style/TextLabel"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                android:hint="@string/name"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtName"
+                    android:padding="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:maxLength="60"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtSurNameLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                app:hintTextAppearance="@style/TextLabel"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                android:hint="@string/surname"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtSurName"
+                    android:padding="14sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPersonName"
+                    android:maxLength="60"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--  Password Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPasswordLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorAccent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="@string/password"
+                android:layout_marginBottom="8dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="14sp"
+                    android:id="@+id/edtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--  Password Label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/txtPasswordLayoutAgain"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorAccent"
+                app:boxBackgroundMode="outline"
+                app:boxCornerRadiusTopStart="4dp"
+                app:boxCornerRadiusBottomEnd="4dp"
+                app:boxCornerRadiusBottomStart="4dp"
+                app:boxCornerRadiusTopEnd="4dp"
+                app:hintTextAppearance="@style/TextLabel"
+                android:hint="@string/passwordAgain"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:padding="14sp"
+                    android:id="@+id/edtPasswordAgain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colorPrimary"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="24dp"
+    android:layout_marginBottom="24dp"
+    android:layout_width="250dp"
+    android:layout_height="50dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnUpdate"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="2dp"
+        style="@style/ButtonFlatAccent"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="@string/update"/>
+
+</LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
